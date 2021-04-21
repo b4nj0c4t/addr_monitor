@@ -8,10 +8,7 @@ Run in docker:
 
 ```
 $ docker build -t addrmonitor .
-$ docker run -it --rm addrmonitor /opt/app \ 
--addrs="ADDRESSA...,ADDRESSB..." \
--slackWebhookURI="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" \
--node="tcp://<your-nodes-zmq-uri>:5556"
+$ docker run -it --rm addrmonitor /opt/app -addrs="ADDRESSA...,ADDRESSB..." -slackWebhookURI="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" -node="tcp://<your-nodes-zmq-uri>:5556"
 ```
 
 Usage:
